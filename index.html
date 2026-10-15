@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab9</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <h1 class="game-title">Game «21»</h1>
+        <div class="game-board">
+            <div class="player-column" id="user-column">
+                <h2 class="player-name" id="user-name">User</h2>
+                <div class="score-box" id="user-score">0</div>
+                <div class="card-slot" id="user-card">
+                    <div class="card-label" id="user-card-label">?</div>
+                </div>
+            </div>
+            <div class="control-column">
+                <p class="attempt-text" id="attempt-counter">Attempt 0 of 3</p>
+                <button type="button" class="generate-btn" id="generate-btn">Generate</button>
+                <p class="result-message" id="result-message"></p>
+            </div>
+            <div class="player-column" id="computer-column">
+                <h2 class="player-name">Computer</h2>
+                <div class="score-box" id="computer-score">0</div>
+                <div class="card-slot" id="computer-card">
+                    <div class="card-label" id="computer-card-label">?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <h2 id="modal-title" class="modal-title">Result</h2>
+            <img id="modal-gif" class="modal-gif" src="" alt="Result GIF">
+            <button type="button" class="modal-btn" id="modal-restart-btn">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>
